@@ -1,0 +1,1243 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
+}
+
+/* =========================================
+   2. TOP BANNER
+   ========================================= */
+.top-banner {
+    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+    padding: 18px 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-left, 
+.banner-center, 
+.banner-right {
+    flex: 1;
+    text-align: center;
+}
+
+.banner-left {
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.banner-right {
+    text-align: right;
+}
+
+.banner-btn {
+    background: #fff;
+    color: #6b7280;
+    padding: 10px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   3. NAVBAR
+   ========================================= */
+.navbar {
+    background: #fff;
+    padding: 0.05rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+}
+
+.logo img {
+    max-height: 50px; /* Ajusta este valor si lo quieres más grande o más chico */
+    width: auto;
+    display: block;
+}
+
+
+.logo img {
+    height: 100%;
+    width: auto;
+    max-width: 250px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #2563eb;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #2563eb;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* =========================================
+   4. HERO SECTION
+   ========================================= */
+.hero {
+    background-image: url('tu-imagen-panoramica.png'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 100px 40px 80px 40px; 
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    max-width: 1400px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 550px;
+    text-align: left;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    opacity: 0.95;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 18px 45px;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+.hero-btn:hover {
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.6);
+}
+
+.hero-btn:active {
+    transform: translateY(-2px);
+}
+
+
+.schedule {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%),
+                      url('images/photorealistic-dentist-scrubs-leaning_1003686-45384.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+}
+
+
+
+
+
+.schedule-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.schedule-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 30px 20px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.schedule-card h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.schedule-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.schedule-times p {
+    margin-bottom: 12px;
+}
+
+.schedule-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    background: #ffffff;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.schedule-btn:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   6. ABOUT SECTION
+   ========================================= */
+.about {
+    position: relative;
+    padding: 80px 20px;
+    background-image:  linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%),
+                      url('images/2759169.jpg'); /* pon la ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   7. CASES SECTION
+   ========================================= */
+.cases {
+    padding: 80px 20px;
+    background-image:  linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%),
+                      url('images/OIP123.webp'); /* o la imagen panorámica suave */
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.cases-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cases-container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.case-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.case-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* =========================================
+   8. MEDIA QUERIES (RESPONSIVE)
+   ========================================= */
+@media (max-width: 1024px) {
+    .schedule-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* TOP BANNER MÓVIL */
+    .banner-content {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .banner-left, 
+    .banner-center, 
+    .banner-right {
+        text-align: center;
+    }
+
+    .banner-left {
+        font-size: 0.95rem;
+    }
+
+    /* NAVBAR & HAMBURGUESA FIX */
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1000;
+        padding: 5px;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 3px 0;
+        background-color: #333;
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        gap: 15px;
+        transition: 0.3s ease;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        display: flex; /* Cambiado de none a flex con posición fuera de pantalla */
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li a {
+        color: #333333;
+        font-size: 16px;
+        display: block;
+        padding: 10px;
+    }
+
+    /* HERO & GRIDS */
+    .hero {
+        padding: 80px 20px 60px 20px;
+        min-height: 60vh;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .schedule-container,
+    .about-container,
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   ANIMACIONES ON SCROLL
+   ========================================= */
+
+/* Estado inicial (oculto) */
+.reveal-fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-zoom {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Estado activo (cuando el usuario hace scroll) */
+.reveal-active {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Delay/Retraso progresivo para las tarjetas de Schedule (Efecto en cascada) */
+.schedule-card:nth-child(1) { transition-delay: 0.1s; }
+.schedule-card:nth-child(2) { transition-delay: 0.25s; }
+.schedule-card:nth-child(3) { transition-delay: 0.4s; }
+.schedule-card:nth-child(4) { transition-delay: 0.55s; }
+
+/* Delay progresivo para los Before & After */
+.case-card:nth-child(1) { transition-delay: 0.1s; }
+.case-card:nth-child(2) { transition-delay: 0.3s; }
+.case-card:nth-child(3) { transition-delay: 0.5s; }
+
+/* =========================================
+   EQUIPO MÉDICO (TEAM)
+   ========================================= */
+.team {
+    padding: 80px 20px;
+    background-color: #f8fafc;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-container h2 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.team-subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.team-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.team-img-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #2563eb;
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-bottom: 5px;
+}
+
+.team-card .role {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.team-card .bio {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* =========================================
+   FORMULARIO DE CITAS (BOOKING)
+   ========================================= */
+.booking-section {
+    padding: 80px 20px;
+    background: #1e293b;
+    color: #ffffff;
+}
+
+.booking-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.booking-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.booking-header p {
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+.form-group input, 
+.form-group select {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #2563eb;
+}
+
+.submit-btn {
+    padding: 16px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 60px 20px 20px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #38bdf8;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #1e293b;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* Responsivo para Team y Footer */
+@media (max-width: 900px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* ESTILOS PARA INFO CARDS / QUICK STATS */
+.info-section {
+    padding: 40px 20px;
+    background: #f8fafc;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.info-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.info-card h3 {
+    color: #0f172a;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.info-card p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* ============================================ */
+/*      ESTILOS SECCIÓN RESEÑAS (CARRUSEL)       */
+/* ============================================ */
+.reviews-section {
+    background-color: #1a1a1a; /* Fondo oscuro como en la imagen */
+    padding: 60px 0;
+    overflow: hidden; /* Importante para el carrusel */
+}
+
+.light-text { color: #fff; }
+
+.dna-icon { margin-bottom: 30px; }
+
+.reviews-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.reviews-track {
+    display: flex;
+    width: calc(350px * 6); /* Ancho tarjeta * número total (incluidas duplicadas) */
+    animation: scrollReviews 20s linear infinite; /* Animación automática */
+}
+
+/* Pausa la animación al pasar el mouse */
+.reviews-track:hover {
+    animation-play-state: paused;
+}
+
+.review-card {
+    width: 320px; /* Ancho fijo de la tarjeta */
+    margin: 0 15px; /* Espaciado entre tarjetas */
+    flex-shrink: 0;
+}
+
+.quote-box {
+    background-color: #212529; /* Gris oscuro para el fondo */
+    border: 2px solid #fff; /* Borde blanco */
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-family: serif; /* Para que parezca comilla */
+}
+
+.review-text {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 20px; /* Espacio para la comilla */
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrado como en la imagen */
+    gap: 15px;
+}
+
+.reviewer-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Foto circular */
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.reviewer-details {
+    text-align: left;
+}
+
+.reviewer-name {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.reviewer-tag {
+    color: #aaa;
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Keyframes para la animación del scroll infinito */
+@keyframes scrollReviews {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-350px * 3)); } /* Mueve el ancho de las 3 originales */
+}
+
+/* ============================================ */
+/*      ESTILOS SECCIÓN SERVICIOS (TARJETAS)     */
+/* ============================================ */
+.services-grid-section {
+    background-color: #f4f4f4; /* Fondo gris muy claro para contraste */
+    padding: 60px 0;
+}
+
+.services-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Rejilla responsive */
+    gap: 20px;
+    justify-items: center;
+}
+
+.service-price-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.service-price-card:hover {
+    transform: translateY(-5px); /* Efecto hover sutil */
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Para que el render dental no se corte */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.price-from {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+
+.price-block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #007bff; /* Color azul acento */
+    margin-bottom: 15px;
+}
+
+.currency {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+.price-amount {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.price-unit {
+    font-size: 12px;
+    color: #666;
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Lista alineada a la izquierda */
+}
+
+.service-features li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.service-features li i {
+    color: #28a745; /* Icono de check verde */
+    margin-right: 10px;
+    font-size: 12px;
+}
+.reviews-section {
+    background-color: #1a1a1a;
+    padding: 60px 20px; /* Le damos margen interno a los lados */
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px; /* Separa el título de las tarjetas */
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+/* ============================================ */
+/*      ESTILOS ANTES Y DESPUÉS (3 IMÁGENES)     */
+/* ============================================ */
+.cases-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.case-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Foto principal del cliente arriba */
+.patient-main-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contenedor flexible para el Antes/Después abajo */
+.before-after-flex {
+    display: flex;
+    gap: 10px;
+}
+
+.ba-item {
+    flex: 1;
+    position: relative;
+}
+
+.ba-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Etiquetas BEFORE / AFTER */
+.ba-label {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.ba-label.after {
+    background: #007bff;
+}
+
+.case-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.case-info p {
+    font-size: 13px;
+    color: #666;
+    margin: 2px 0;
+}
+
+
+    /* Clase que activa el JS al dar click */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+/* =========================================
+   MEDIA QUERY MÓVIL (ÚNICO BLOQUE AL FINAL)
+   ========================================= */
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .banner-left, 
+    .banner-center, 
+    .banner-right {
+        text-align: center;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 15px;
+        transition: 0.3s ease;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .hero {
+        padding: 80px 20px 60px 20px;
+        min-height: 60vh;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .schedule-container,
+    .about-container,
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+}

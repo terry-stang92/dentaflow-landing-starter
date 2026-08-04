@@ -29,7 +29,7 @@ This repository is a fully functional, production-ready landing page prototype e
   - Direct WhatsApp Integration: One-click booking button routing prospects straight to front-desk staff.
 - Mobile-First & Ultra-Fast Architecture: Built with zero bloat (Vanilla JS/CSS3) for instant load times under 3G/4G networks—essential for low CPL (Cost Per Lead) on Meta Ads and Google Ads.
 
-![DentaSmile Clinic Features & Contact System](./assets/features-preview.png)
+![DentaSmile Clinic Features & Contact System]("C:\Users\ferna\Downloads\Screenshot_3-8-2026_20131_127.0.0.1.jpeg")
 
 ---
 

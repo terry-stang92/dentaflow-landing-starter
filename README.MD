@@ -8,7 +8,7 @@ High-performance web system designed for dental clinics and medical tourism (US/
 
 ## Live Demo & Visual Showcase
 
-- Live Website Link: [https://your-live-demo-link.com](https://your-live-demo-link.com)
+- Live Website Link: https://terry-stang92.github.io/dentaflow-landing-starter/
 
 
 
